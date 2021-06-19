@@ -1,0 +1,13 @@
+.root{
+  flex-grow: 1;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.gridcontainer{
+  padding-top: 3rem;
+}
+
+.button{
+  font-weight: lighter;
+}
