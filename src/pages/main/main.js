@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
+import Sections from '../../components/sections/sections';
 import Overview from '../../components/overview/overview';
 import Basics from '../../components/basics/basics';
 
@@ -15,29 +16,27 @@ function Main() {
       <h1>Hackathon Kit</h1>
 
       <Grid container spacing={2} className="gridcontainer">
-          <Grid item xs={4}>
-            <h3>Project</h3>
-            <Button className="button" href="/overview">Overview</Button><br/>
-            <Button className="button" href="/basics">Basics</Button><br/>
-            <Button className="button" href="/technicals">Technicals</Button><br/>
 
-            <h3>Learn</h3>
-            <Button className="button" href="/overview">Overview</Button><br/>
-            <Button className="button" href="/overview">Basics</Button><br/>
-            <Button className="button" href="/overview">Technicals</Button><br/>
+          <Grid item xs={3}>
+            <Sections/>
           </Grid>
-          <Grid item xs={8}>
+
+          <Grid item xs={9}>
             <Router>
               <Switch>
+
                 <Route path="/overview">
                   <Overview/>
                 </Route>
+
                 <Route path="/basics">
                   <Basics/>
                 </Route>
+
               </Switch>
             </Router>
           </Grid>
+
       </Grid>
     </div>
   );
