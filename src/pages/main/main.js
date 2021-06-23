@@ -7,8 +7,8 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
 import Sections from '../../components/sections/sections';
-import Overview from '../../components/overview/overview';
-import Basics from '../../components/basics/basics';
+import Overview from '../overview/overview';
+import Basics from '../basics/basics';
 
 function Main() {
   return (

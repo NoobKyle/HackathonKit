@@ -12,9 +12,9 @@ function Sections() {
       <Button className="button" href="/pitch">Pitch</Button><br/>
 
       <h3>Learn</h3>
-      <Button className="button" href="/overview">Overview</Button><br/>
-      <Button className="button" href="/overview">Basics</Button><br/>
-      <Button className="button" href="/overview">Technicals</Button><br/>
+      <Button className="button" href="/overview">Platform</Button><br/>
+      <Button className="button" href="/overview">Hackathons</Button><br/>
+      <Button className="button" href="/overview">Resources</Button><br/>
       </div>
   );
 }
