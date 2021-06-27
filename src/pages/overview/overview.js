@@ -59,7 +59,6 @@ function Overview() {
       <div className="overview">
       <h3>Overview</h3>
       <h4>Project's page</h4>
-      <FormControlLabel control={ <Checkbox checked={checked} onChange={handleChange} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Project Title" /><br/>
       <FormControlLabel control={ <Checkbox checked={teamName} onChange={handleChange1} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Team Name" /><br/>
       <FormControlLabel control={ <Checkbox checked={teamMembers} onChange={handleChange2} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Team Members" /><br/>
       <FormControlLabel control={ <Checkbox checked={projectName} onChange={handleChange3} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Project Name" /><br/>
