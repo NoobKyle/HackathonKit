@@ -8,7 +8,8 @@ function Sections() {
       <div className="overview">
       <h3>Project</h3>
       <Button className="button" href="/overview">Overview</Button><br/>
-      <Button className="button" href="/basics">Basics</Button><br/>
+      <Button className="button" href="/team">Team</Button><br/>
+      <Button className="button" href="/project">Project</Button><br/>
       <Button className="button" href="/pitch">Pitch</Button><br/>
 
       <h3>Learn</h3>

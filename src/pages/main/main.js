@@ -6,7 +6,9 @@ import Grid from '@material-ui/core/Grid';
 
 import Sections from '../../components/sections/sections';
 import Overview from '../overview/overview';
-import Basics from '../basics/basics';
+import Team from '../team/team';
+import Project from '../project/project';
+import Pitch from '../pitch/pitch';
 
 function Main() {
   return (
@@ -15,11 +17,11 @@ function Main() {
 
       <Grid container spacing={2} className="gridcontainer">
 
-          <Grid item xs={3}>
+          <Grid item xs={2}>
             <Sections/>
           </Grid>
 
-          <Grid item xs={9}>
+          <Grid item xs={7}>
             <Router>
               <Switch>
 
@@ -27,12 +29,25 @@ function Main() {
                   <Overview/>
                 </Route>
 
-                <Route path="/basics">
-                  <Basics/>
+                <Route path="/team">
+                  <Team/>
+                </Route>
+
+                <Route path="/project">
+                  <Project/>
+                </Route>
+
+                <Route path="/pitch">
+                  <Pitch/>
                 </Route>
 
               </Switch>
             </Router>
+          </Grid>
+
+          <Grid item xs={3}>
+            <h3>Tweets</h3>
+            <p>This is the title that will be used to identify your project on the platform and public internet facing page.</p>
           </Grid>
 
       </Grid>
