@@ -58,23 +58,22 @@ function Overview() {
   return (
       <div className="overview">
       <h3>Overview</h3>
-      <h4>Project's page</h4>
+      <h4>Team</h4>
       <FormControlLabel control={ <Checkbox checked={teamName} onChange={handleChange1} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Team Name" /><br/>
       <FormControlLabel control={ <Checkbox checked={teamMembers} onChange={handleChange2} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Team Members" /><br/>
+
+      <h4>Project</h4>
       <FormControlLabel control={ <Checkbox checked={projectName} onChange={handleChange3} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Project Name" /><br/>
       <FormControlLabel control={ <Checkbox checked={description} onChange={handleChange4} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Description" /><br/>
       <FormControlLabel control={ <Checkbox checked={projectBenefits} onChange={handleChange5} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Project Benefits" /><br/>
       <FormControlLabel control={ <Checkbox checked={techStack} onChange={handleChange6} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Tech Stack" /><br/>
       <FormControlLabel control={ <Checkbox checked={projectChallenges} onChange={handleChange7} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Project Challenges" /><br/>
+
+      <h4>Pitch Resources</h4>
       <FormControlLabel control={ <Checkbox checked={screenshots} onChange={handleChange8} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Screenshots" /><br/>
       <FormControlLabel control={ <Checkbox checked={presentation} onChange={handleChange9} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Presentation" /><br/>
       <FormControlLabel control={ <Checkbox checked={demoVideo} onChange={handleChange10} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Demo Video Link" /><br/>
       <FormControlLabel control={ <Checkbox checked={githubRepo} onChange={handleChange11} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Github Repo Link" /><br/>
-
-      <h4>Pitch Resources</h4>
-      <FormControlLabel control={ <Checkbox checked={checked} onChange={handleChange} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Project Title" /><br/>
-      <FormControlLabel control={ <Checkbox checked={checked} onChange={handleChange} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Project Title" /><br/>
-      <FormControlLabel control={ <Checkbox checked={checked} onChange={handleChange} inputProps={{ 'aria-label': 'primary checkbox' }}/> } label="Project Title" /><br/>
       </div>
   );
 }

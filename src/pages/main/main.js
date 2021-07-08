@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import './main.css';
 
 import Grid from '@material-ui/core/Grid';
@@ -7,10 +7,15 @@ import Grid from '@material-ui/core/Grid';
 import Navbar from '../../components/navbar/navbar';
 import Sections from '../../components/sections/sections';
 import Twitter from '../../components/twitter/twitter';
+
 import Overview from '../overview/overview';
 import Team from '../team/team';
 import Project from '../project/project';
 import Pitch from '../pitch/pitch';
+
+import Resources from '../learn/resources';
+
+import Devfailstory from '../devfailstory/devfailstory';
 
 function Main() {
   return (
@@ -26,6 +31,7 @@ function Main() {
           <Grid item xs={6}>
             <Router>
               <Switch>
+                <Redirect exact from="/" to="/overview" />
 
                 <Route path="/overview">
                   <Overview/>
@@ -41,6 +47,14 @@ function Main() {
 
                 <Route path="/pitch">
                   <Pitch/>
+                </Route>
+
+                <Route path="/resources">
+                  <Resources/>
+                </Route>
+
+                <Route path="/devfailstory">
+                  <Devfailstory/>
                 </Route>
 
               </Switch>

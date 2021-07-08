@@ -2,6 +2,7 @@ import React from 'react';
 import './project.css';
 
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 function Project() {
   return (
@@ -31,12 +32,13 @@ function Project() {
         <p>This is the title that will be used to identify your project on the platform and public internet facing page.</p>
         <TextField id="outlined-basic" label="" variant="outlined" size="small" fullWidth multiline rows={6}/>
         <br/> <br/>
-        
+
         <h5>Challenges Faced</h5>
         <p>This is the title that will be used to identify your project on the platform and public internet facing page.</p>
         <TextField id="outlined-basic" label="" variant="outlined" size="small" fullWidth multiline rows={6}/>
 
         <br/> <br/> <br/>
+        <Button variant="outlined" color="primary" fullWidth onClick={() => { alert("Info Saved")}}>Save</Button>
         <hr/>
       </div>
   );

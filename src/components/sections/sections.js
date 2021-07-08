@@ -13,9 +13,13 @@ function Sections() {
       <Button className="button" href="/pitch">Pitch</Button><br/>
 
       <h3>Learn</h3>
-      <Button className="button" href="/overview">Platform</Button><br/>
-      <Button className="button" href="/overview">Hackathons</Button><br/>
-      <Button className="button" href="/overview">Resources</Button><br/>
+      <Button className="button" href="/platform">Platform</Button><br/>
+      <Button className="button" href="/hackathon">Hackathons</Button><br/>
+      <Button className="button" href="/resources">Resources</Button><br/>
+
+      <br/>
+      <h3>Dev Community</h3>
+      <Button className="button" href="/devfailstory">Dev Fail Story</Button><br/>
       </div>
   );
 }

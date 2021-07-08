@@ -1,15 +1,17 @@
+import { Provider } from "react-redux";
 import './App.css';
 
+import store from "./store"
 import Container from '@material-ui/core/Container';
 
 import Main from './pages/main/main';
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <Container className="App">
         <Main/>
       </Container>
-    </div>
+    </Provider>
   );
 }
 
