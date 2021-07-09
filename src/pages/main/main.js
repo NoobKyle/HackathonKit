@@ -23,13 +23,13 @@ function Main() {
       <Navbar/>
 
       <Grid container spacing={2} className="gridcontainer">
+      <Router>
 
           <Grid item xs={2}>
             <Sections/>
           </Grid>
 
           <Grid item xs={6}>
-            <Router>
               <Switch>
                 <Redirect exact from="/" to="/overview" />
 
@@ -58,7 +58,6 @@ function Main() {
                 </Route>
 
               </Switch>
-            </Router>
           </Grid>
 
           <Grid item xs={4}>
@@ -66,6 +65,7 @@ function Main() {
             <Twitter/>
           </Grid>
 
+          </Router>
       </Grid>
     </div>
   );
