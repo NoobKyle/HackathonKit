@@ -10,11 +10,20 @@ const INITIAL_STATE = {
   challenges: "No Challenges Faced"
 }
 
+function handleProjectUpdate(draft, payload){
+  draft.title = payload.title;
+  draft.features = payload.features;
+  draft.description = payload.description;
+  draft.benefits = payload.benefits;
+  draft.techstack = payload.techstack;
+  draft.challenges = payload.challenges;
+}
+
 export default function project(state = INITIAL_STATE, action){
   return Produce(state, draft => {
     switch( action.type ){
-      case "project/TITLE":
-        draft.title = action.payload;
+      case "project/UPDATE":
+        handleProjectUpdate(draft, action.payload)
         break;
       default:
     }
