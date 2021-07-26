@@ -21,7 +21,7 @@ function Team() {
     var teamsocialsfield = document.getElementById("teamsocials").value;
 
     // Verify which fields are empty.
-    if( teamnamefield == "" || teammembersfield == "" || teamsocialsfield == "" ){
+    if( teamnamefield === "" || teammembersfield === "" || teamsocialsfield === "" ){
       dispatch( teamOverview(0) );
       alert("Fill in All Fields !")
     }else{

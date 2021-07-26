@@ -17,6 +17,22 @@ function handleProjectUpdate(draft, payload){
   draft.benefits = payload.benefits;
   draft.techstack = payload.techstack;
   draft.challenges = payload.challenges;
+
+  localStorage.setItem("project", JSON.stringify(payload));
+}
+
+function handleProjectLocalStorage(draft){
+  var store, values;
+
+  store = localStorage.getItem("project");
+  values = JSON.parse(store);
+
+  draft.title = values.title;
+  draft.features = values.features;
+  draft.description = values.description;
+  draft.benefits = values.benefits;
+  draft.techstack = values.techstack;
+  draft.challenges = values.challenges;
 }
 
 export default function project(state = INITIAL_STATE, action){
@@ -24,6 +40,9 @@ export default function project(state = INITIAL_STATE, action){
     switch( action.type ){
       case "project/UPDATE":
         handleProjectUpdate(draft, action.payload)
+        break;
+      case "project/STORAGE":
+        handleProjectLocalStorage(draft);
         break;
       default:
     }

@@ -13,13 +13,15 @@ import Team from '../team/team';
 import Project from '../project/project';
 import Pitch from '../pitch/pitch';
 
+import Hackkit from '../learn/hackkit';
+import Hackathons from '../learn/hackathons';
 import Resources from '../learn/resources';
 
 import Devfailstory from '../devfailstory/devfailstory';
 
 function Main() {
   return (
-    <div className="root">
+    <div className="maincontainer">
       <Navbar/>
 
       <Grid container spacing={2} className="gridcontainer">
@@ -47,6 +49,14 @@ function Main() {
 
                 <Route path="/pitch">
                   <Pitch/>
+                </Route>
+
+                <Route path="/hackkit">
+                  <Hackkit/>
+                </Route>
+
+                <Route path="/hackathon">
+                  <Hackathons/>
                 </Route>
 
                 <Route path="/resources">

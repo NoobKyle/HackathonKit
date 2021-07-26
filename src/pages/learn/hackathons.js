@@ -1,11 +1,13 @@
 import React from 'react';
 import './learn.css';
+import coding from "./images/coding.jpg";
 
-import Button from '@material-ui/core/Button';
 
 function Resources() {
   return (
       <div className="hackathon">
+        <h4>Hackathons</h4>
+        <img className="headerimg" src={coding} alt=""/>
         <h4>What is a hackathon?</h4>
         <p>A hackathon is an event, usually hosted by a tech company or organization, where programmers get together for a short period of time to collaborate on a project. The participants work rapidly and often work without sleep to achieve their task, as the events generally only last 24 hours or take place over a weekend.<br/><br/>
         Hackathons are often competition-style events where a project must be completed in a short time frame, according to Levent Gurses, founder of Movel, a mobile app design and development company. He explains that participants build prototypes of software applications like web or mobile apps. He says he’s attended dozens of hackathons and even won a few.<br/><br/>

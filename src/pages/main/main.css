@@ -1,11 +1,12 @@
-.root{
+.maincontainer{
   flex-grow: 1;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+  height: 100%;
 }
 
 .gridcontainer{
-  padding-top: 3rem;
+  padding-top: 0rem;
 }
 
 .button{

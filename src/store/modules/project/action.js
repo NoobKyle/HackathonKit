@@ -4,3 +4,9 @@ export function projectUpdate(title, features, description, benefits, techstack,
 		payload: {title, features, description, benefits, techstack, challenges}
 		};
 	}
+
+export function projectStorageUpdate(){
+	return {
+		type: "project/STORAGE"
+	}
+}

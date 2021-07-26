@@ -1,5 +1,6 @@
 .overview{
   text-align: left;
+  position: sticky;
 }
 
 .sectionLink{

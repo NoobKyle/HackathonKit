@@ -17,7 +17,7 @@ const INITIAL_STATE = {
 }
 
 function calculateTeamCheck(draft, payload){
-  if( payload == 3){
+  if( payload === 3){
     draft.teamname = true;
     console.log('Team Section Done.')
   }else{
@@ -27,7 +27,7 @@ function calculateTeamCheck(draft, payload){
 }
 
 function calculateProjectCheck(draft, payload){
-  if( payload == 6){
+  if( payload === 6){
     draft.projectname = true;
     draft.projectfeatures = true;
     draft.description = true;

@@ -2,5 +2,7 @@ a{
   text-decoration: none;
 }
 
-.hackathon{
+.headerimg{
+  max-height: 30rem;
+  width: 100%;
 }

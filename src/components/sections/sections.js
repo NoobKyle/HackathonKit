@@ -14,7 +14,7 @@ function Sections() {
       <Button className="button"><Link to="/pitch" className="sectionLink">Pitch</Link></Button><br/>
 
       <h3>Learn</h3>
-      <Button className="button"><Link to="/platform" className="sectionLink">Platform</Link></Button><br/>
+      <Button className="button"><Link to="/hackkit" className="sectionLink">Hack-Kit</Link></Button><br/>
       <Button className="button"><Link to="/hackathon" className="sectionLink">Hackathons</Link></Button><br/>
       <Button className="button"><Link to="/resources" className="sectionLink">Resources</Link></Button><br/>
 

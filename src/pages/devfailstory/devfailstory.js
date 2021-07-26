@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 function Devfailstory() {
   return (
       <div className="devfailstory">
-        <img className="banner" src={banner}/>
+        <img className="banner" src={banner} alt=""/>
 
         <p>Behind every success story is an embarrassing first effort, a stumble,
           a setback or a radical change of direction. It’s these first clumsy

@@ -1,7 +1,6 @@
 import React from 'react';
 import './learn.css';
 
-import Button from '@material-ui/core/Button';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
@@ -11,6 +10,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 function Resources() {
   return (
       <div className="resources">
+        <h4>Resources</h4><br/>
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -21,26 +21,26 @@ function Resources() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-             <a href="https://javascript30.com/" target="_blank">Wes Bos Javascript 30</a><p> - Free vanilla Javascript course covering the basics of Javascript.</p><br/><br/>
-             <a href="https://egghead.io/" target="_blank">Egghead.io</a><p> - A Mix of free and paid courses for Front End Frameworks and Javascript.</p><br/><br/>
-             <a href="www.linkedin.com/learning" target="_blank">Linkedin Learning</a><p> - A library of courses on a full range of a variety of topics. This was Lynda before.</p><br/><br/>
-             <a href="http://guide.bash.academy" target="_blank">The Bash Guide</a><p> - Very good guide for learning the Bash Shell.</p><br/><br/>
-             <a href="https://wildlyinaccurate.com/a-hackers-guide-to-git/" target="_blank">A Hacker's Guide to Git</a><p> - For those wanting to learn git with a solid foundation.</p><br/><br/>
-             <a href="https://www.udacity.com/course/ud015" target="_blank">Object-Oriented JavaScript</a><p> - Learn how to utilize the various object-oriented programming features within JavaScript, and more importantly, how to write reusable and maintainable libraries.</p><br/><br/>
-             <a href="https://www.udacity.com/course/ud989" target="_blank">JavaScript Design Patterns</a><p> - Free course to learn the importance of separating concerns when writing JavaScript, gaining hands-on experience along the way.</p><br/><br/>
-             <a href="http://htmldog.com/guides/javascript/advanced/" target="_blank">JavaScript Advanced Tutorial by HTML Dog</a><p> - Advanced JS tutorial.</p><br/><br/>
-             <a href="https://codehs.com/info/curriculum/introjs" target="_blank">Intro to Computer Science in JavaScript</a><p> - An online course to help bring CS into Highschools.</p><br/><br/>
-             <a href="https://javascript30.com/" target="_blank">Wes Bos JavaScript 30</a><p> - Free vanilla JavaScript course covering the basics of JavaScript.</p><br/><br/>
-             <a href="https://egghead.io/" target="_blank">Egghead.io</a><p> - A Mix of free and paid courses for Front End Frameworks and JavaScript.</p><br/><br/>
-             <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a><p> - Tutorials that cover a variety of topics, e.g. web design, algorithms, data visualization etc.</p><br/><br/>
-             <a href="https://flukeout.github.io/" target="_blank">CSS Diner</a><p> - A game to learn and practice CSS selectors.</p><br/><br/>
-             <a href="http://cssgridgarden.com/" target="_blank">CSS Grid Garden</a><p> - Easy game to learn CSS Grid.</p><br/><br/>
-             <a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a><p> - A game to learn CSS flexbox.</p><br/><br/>
-             <a href="https://www.udacity.com/course/ud015" target="_blank">Object-Oriented JavaScript</a><p> - Learn how to utilize the various object-oriented programming features within JavaScript, and more importantly, how to write reusable and maintainable libraries.</p><br/><br/>
-             <a href="https://www.udacity.com/course/ud989" target="_blank">JavaScript Design Patterns</a><p> - Free course to learn the importance of separating concerns when writing JavaScript, gaining hands-on experience along the way</p><br/><br/>
-             <a href="http://htmldog.com/guides/javascript/advanced/" target="_blank">JavaScript Advanced Tutorial by HTML Dog</a><p> - Advanced JS tutorial</p><br/><br/>
-             <a href="https://codehs.com/info/curriculum/introjs" target="_blank">Intro to Computer Science in JavaScript</a><p> - An online course to help bring CS into High schools.</p><br/><br/>
-             <a href="https://fullstackopen.com/en/" target="_blank">Fullstack JavaScript Guide</a><p> - A complete dive into client and serverside JavaScript. Even with graphql, testing and state management.</p><br/><br/>
+             <a href="https://javascript30.com/" target="_blank" rel="noreferrer">Wes Bos Javascript 30</a><p> - Free vanilla Javascript course covering the basics of Javascript.</p><br/><br/>
+             <a href="https://egghead.io/" target="_blank" rel="noreferrer">Egghead.io</a><p> - A Mix of free and paid courses for Front End Frameworks and Javascript.</p><br/><br/>
+             <a href="www.linkedin.com/learning" target="_blank" rel="noreferrer">Linkedin Learning</a><p> - A library of courses on a full range of a variety of topics. This was Lynda before.</p><br/><br/>
+             <a href="http://guide.bash.academy" target="_blank" rel="noreferrer">The Bash Guide</a><p> - Very good guide for learning the Bash Shell.</p><br/><br/>
+             <a href="https://wildlyinaccurate.com/a-hackers-guide-to-git/" target="_blank" rel="noreferrer">A Hacker's Guide to Git</a><p> - For those wanting to learn git with a solid foundation.</p><br/><br/>
+             <a href="https://www.udacity.com/course/ud015" target="_blank" rel="noreferrer">Object-Oriented JavaScript</a><p> - Learn how to utilize the various object-oriented programming features within JavaScript, and more importantly, how to write reusable and maintainable libraries.</p><br/><br/>
+             <a href="https://www.udacity.com/course/ud989" target="_blank" rel="noreferrer">JavaScript Design Patterns</a><p> - Free course to learn the importance of separating concerns when writing JavaScript, gaining hands-on experience along the way.</p><br/><br/>
+             <a href="http://htmldog.com/guides/javascript/advanced/" target="_blank" rel="noreferrer">JavaScript Advanced Tutorial by HTML Dog</a><p> - Advanced JS tutorial.</p><br/><br/>
+             <a href="https://codehs.com/info/curriculum/introjs" target="_blank" rel="noreferrer">Intro to Computer Science in JavaScript</a><p> - An online course to help bring CS into Highschools.</p><br/><br/>
+             <a href="https://javascript30.com/" target="_blank" rel="noreferrer">Wes Bos JavaScript 30</a><p> - Free vanilla JavaScript course covering the basics of JavaScript.</p><br/><br/>
+             <a href="https://egghead.io/" target="_blank" rel="noreferrer">Egghead.io</a><p> - A Mix of free and paid courses for Front End Frameworks and JavaScript.</p><br/><br/>
+             <a href="https://www.freecodecamp.org/learn/" target="_blank" rel="noreferrer">freeCodeCamp</a><p> - Tutorials that cover a variety of topics, e.g. web design, algorithms, data visualization etc.</p><br/><br/>
+             <a href="https://flukeout.github.io/" target="_blank" rel="noreferrer">CSS Diner</a><p> - A game to learn and practice CSS selectors.</p><br/><br/>
+             <a href="http://cssgridgarden.com/" target="_blank" rel="noreferrer">CSS Grid Garden</a><p> - Easy game to learn CSS Grid.</p><br/><br/>
+             <a href="https://flexboxfroggy.com/" target="_blank" rel="noreferrer">Flexbox Froggy</a><p> - A game to learn CSS flexbox.</p><br/><br/>
+             <a href="https://www.udacity.com/course/ud015" target="_blank" rel="noreferrer">Object-Oriented JavaScript</a><p> - Learn how to utilize the various object-oriented programming features within JavaScript, and more importantly, how to write reusable and maintainable libraries.</p><br/><br/>
+             <a href="https://www.udacity.com/course/ud989" target="_blank" rel="noreferrer">JavaScript Design Patterns</a><p> - Free course to learn the importance of separating concerns when writing JavaScript, gaining hands-on experience along the way</p><br/><br/>
+             <a href="http://htmldog.com/guides/javascript/advanced/" target="_blank" rel="noreferrer">JavaScript Advanced Tutorial by HTML Dog</a><p> - Advanced JS tutorial</p><br/><br/>
+             <a href="https://codehs.com/info/curriculum/introjs" target="_blank" rel="noreferrer">Intro to Computer Science in JavaScript</a><p> - An online course to help bring CS into High schools.</p><br/><br/>
+             <a href="https://fullstackopen.com/en/" target="_blank" rel="noreferrer">Fullstack JavaScript Guide</a><p> - A complete dive into client and serverside JavaScript. Even with graphql, testing and state management.</p><br/><br/>
             </Typography>
           </AccordionDetails>
         </Accordion>

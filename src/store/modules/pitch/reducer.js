@@ -7,11 +7,17 @@ const INITIAL_STATE = {
   youtube: "No YouTube"
 }
 
+function handlePitchUpdate(draft, payload){
+  draft.images = payload.images;
+  draft.powerpoint = payload.powerpoint;
+  draft.youtube = payload.youtube;
+}
+
 export default function project(state = INITIAL_STATE, action){
   return Produce(state, draft => {
     switch( action.type ){
       case "pitch/YOUTUBE":
-        draft.youtube = action.payload;
+        handlePitchUpdate(draft, action.payload)
         break;
       default:
     }
